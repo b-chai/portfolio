@@ -14,7 +14,7 @@ body {
 }
 
 .full-screen {
-  padding: 8rem 0;
+  padding-top: 8rem ;
 }
 
 .small-text {
@@ -129,15 +129,17 @@ b, strong {
   top: 0;
   right: 0;
   left: 0;
-  animation: BottomTotop 6s linear infinite 0s;
+  animation: BottomTotop 4s linear infinite 0s;
   white-space: nowrap;
 }
+
 .animated-item:nth-child(2n+2) {
   animation-delay: 2s;
 }
-.animated-item:nth-child(3n+3) {
+
+/* .animated-item:nth-child(3n+3) {
   animation-delay: 4s;
-}
+} */
 
 @keyframes BottomTotop {
   0% {
@@ -190,15 +192,14 @@ b, strong {
 
 .navbar-brand {
   font-weight: bold;
-}
+5
 
-.navbar-expand-sm .navbar-nav .nav-link {
   padding: 0 20px;
 }
 
 .nav-link {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
   overflow: hidden;
 }
 .nav-link span {
@@ -456,9 +457,8 @@ b, strong {
   color: #f7f3f3;
 }
 
-.social-links .uil {
+.social-lin5s .uil {
   color: #f7f3f3;
-  font-size: 20px;
   display: block;
   margin: 5px 0;
 }
@@ -494,7 +494,7 @@ b, strong {
     padding: 0 2rem;
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   h1 {
     font-size: 2.4em;
   }
@@ -508,12 +508,7 @@ b, strong {
   }
 
   .navbar-collapse {
-    background: #ffffff;
     text-align: center;
-    padding-bottom: 20px;
-  }
-
-  .navbar-expand-sm .navbar-nav .nav-link {
     padding: 3px 20px;
   }
 }
@@ -574,4 +569,17 @@ b, strong {
   text-align: center;
   width: 50%;
   margin: 0 auto;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 50px ;
+}
+
+.skills-list>li{
+  padding: 20px;
 }
